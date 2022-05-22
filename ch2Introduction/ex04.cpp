@@ -2,6 +2,11 @@
 #include <iostream>
 #include <fstream>
 
+/**
+ * example: add slide bar;
+ * 
+ */
+
 using namespace cv;
 using namespace std;
 

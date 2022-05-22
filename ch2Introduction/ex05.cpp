@@ -1,5 +1,10 @@
 #include <opencv2/opencv.hpp>
 
+/**
+ * @brief how to use x-Blur funcs;
+ * 
+ */
+
 using namespace cv;
 
 void example2_5(const Mat &image) {
@@ -9,7 +14,7 @@ void example2_5(const Mat &image) {
     imshow("Example2_5-in", image);
 
     Mat out;
-    GaussianBlur(image, out, Size(15,15), 3, 3);
+    GaussianBlur(image, out, Size(15,15), 3, 3);// size: must be odd;
     GaussianBlur(out, out, Size(15,15), 3, 3);
 
     imshow("Example2_5-out", out);
