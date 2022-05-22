@@ -6,15 +6,15 @@ int main (int argc, char*argv[]){
 
     namedWindow("Example3", WINDOW_NORMAL);
     VideoCapture cap;
-    cap.open(String(argv[1]));
-    // cap.open(argv[1], 0);
+    // cap.open(String(argv[1]));
+    cap.open(argv[1], 0);
 
     Mat frame;
     for (;;) {
         cap >> frame;
         if (frame.empty()) break;
         imshow("Example3", frame);
-        if (waitKey(33) >= 0)   
+        if (waitKey(33) >= 0)   // wait for any key pressed event;
         {
             break;
         }   
